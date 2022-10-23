@@ -1,0 +1,172 @@
+/*============================================
+Font: Karla
+
+COLORS: #323A45 / #848484
+============================================*/
+
+@font-face {
+    font-family: Karla-Bold;
+    src: url("../font/Karla-Bold.ttf");
+}
+
+@font-face {
+    font-family: Karla-Light;
+    src: url("../font/Karla-Light.ttf");
+}
+
+@font-face {
+    font-family: Karla-Regular;
+    src: url("../font/Karla-Regular.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/*
+*====================================================
+*                   HEADER   
+*====================================================
+*/
+body header {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 3% 2.5% 4% 5%;
+    font-family: Karla-Bold;
+}
+
+body header nav li {
+    margin-right: 2vw;
+}
+
+/*
+*====================================================
+*              SECTIONS: products   
+*====================================================
+*/
+#partOne, 
+#partTwo,
+#partThree,
+#partFour,
+#partFifth {
+    width: 90%;
+    margin: 0 auto 20vh auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+    grid-column-gap: 0px;
+    grid-row-gap: 60px;
+}
+
+.product__price {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product__price p {
+    margin-top: 2vh;
+    font-family: Karla-Bold;
+    font-size: 2rem;
+}
+
+section a {
+    text-decoration: none;
+    color: #323A45;
+}
+
+section a:hover {
+    color: #323A45;
+}
+
+.brand__name {
+    font-family: Karla-Light;
+    color: #848484;
+    font-size: 2rem;
+}
+
+.big__pic img {
+    grid-column: 1 / 2;
+    object-fit: contain;
+    width: 100%;
+}
+
+.first__row {
+    display: flex;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    gap: 0 30px;
+}
+
+.second__row {
+    display: flex;
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    gap: 0 30px;
+} 
+
+.small__pic img {
+    object-fit: contain;
+    width: 100%;
+    /* height: 100%; */
+}
+
+/* img {
+    width: 100%;
+} */
+
+/*
+*====================================================
+*                   FOOTER 
+*====================================================
+*/
+body footer {
+    width: 90%;
+    margin: 0 auto;
+}
+#menu {
+    display: flex;
+}
+
+#menu .box {
+    width: 19%;
+}
+
+#menu .box:nth-of-type(2) {
+    margin-left: 15%;
+}
+
+#menu h3 {
+    font-size: 2rem;
+    margin-bottom: 15%;
+}
+
+#menu p {
+    font-size: 1.5rem;
+    font-family: Karla-Light;
+    color: #323A45;
+    line-height: 1vh;
+}
+
+#menu a {
+    text-decoration: none;
+    color: #323A45;
+    font-size: 2rem;
+}
+
+#menu .box span {
+    color: black;
+    font-size: 2rem;
+}
+
+#menu .find__us {
+    display: flex;
+    flex-direction: column;
+}
